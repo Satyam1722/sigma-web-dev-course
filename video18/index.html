@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <style>
+        
+        /* Element Selector */
+        h1{
+            color:rgb(226, 206, 206);
+            background-color:pink;
+        }
+
+        /* Class Selector */
+        .red{
+            color :red;
+            background-color:yellow;
+        }
+
+        /* Id Selector */
+        #green{
+            color:green;
+            background-color:blue;
+        }
+
+        /* Uninversal Selector */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        /* Child Selector */
+
+        h1 > p{
+            color:red;
+            background-color:white;
+        }
+
+        /* Descedent Selector */
+
+        h1 p{
+            color:red;
+            background-color:white;
+        }
+
+
+        /* Pseudo Selector */
+        a:hover{
+            background-color:yellow;
+        }
+
+        a:active{
+            background-color:red;
+        }
+        a:hover{
+            background-color:yellow;
+        }
+
+        a:visited{
+            color:green;
+        }
+
+        a:link{
+            color:red;
+        }
+
+        a:first-child{
+            color:blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="red">
+        This is heading 1 tag
+    </h1>
+    <h1 id="green">
+        This is heading 1 tag
+    </h1>
+    <h1>
+        <article>
+            <p>
+                this is paragraph tag under h1 tag
+            </p>
+        </article>
+    </h1>
+
+    <strong>
+        <a href="https://www.google.com">Google</a>
+    </strong>
+
+    <strong>
+        <a href="https://www.facebook1.com">facebook</a>
+    </strong>
+</body>
+</html>

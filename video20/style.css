@@ -1,0 +1,14 @@
+*{
+    margin:0px;
+    padding:opx;
+}
+
+p:first-child{
+    color:red;
+    background-color:rgba(0, 0, 255, 0.207)
+}
+
+p{
+    color:aqua;
+    background-color:rgba(0, 0, 255, 0.512)
+}
