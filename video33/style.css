@@ -1,0 +1,25 @@
+:root{
+    --color:grey;
+    --seccolor:white;
+  }
+  
+  *{
+    padding:0px;
+    margin:0px;
+  }
+  
+  .lists{
+    display:flex;
+  }
+  
+  .list{
+    background-color:var(--color);
+    padding:5px;
+    margin:5px;
+    display:flex;
+  }
+  
+  .list:hover{
+    background-color:var(--seccolor);
+    cursor:pointer;
+  }
