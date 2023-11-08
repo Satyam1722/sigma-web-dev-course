@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selector</title>
+
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+
+        .box{
+            height:200px;
+            width:200px;
+            background-color: red;
+            border:2px solid black;
+        }
+
+        /* .boxes *{
+            height:200px;
+            width:200px;
+            background-color: purple;
+        } */
+
+        .box:nth-last-child(even)
+        {
+            background-color: blue;
+        }
+
+        .box::first-line
+        {
+            color:white;
+        }
+
+       /* .box,.boxes, [name="satyam"]{
+            background-color: blue;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div name="satyam"class="box">this is my name is lakhan and how are you</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae tempore iusto beatae, quia rem vero cupiditate. Dolor quidem sapiente commodi incidunt odio perferendis.</div>
+        <div class="box">hello how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum numquam corporis aut, perspiciatis reprehenderit officiis illo impedit similique odit ad odio a maxime vitae eos.</div>
+    </div>
+</body>
+</html>

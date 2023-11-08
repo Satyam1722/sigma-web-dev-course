@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 5</title>
+
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			.logo {
+				border-radius: 20px;
+				left: 500px;
+			}
+
+			[image="logo"] {
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+				border-radius: 40px;
+			}
+
+			footer,
+			header {
+				background-color: rgb(193, 12, 193);
+				padding: 10px 10px;
+				font-size: large;
+				font-weight: bolder;
+				color: rgb(13, 45, 4);
+			}
+
+			.upper {
+				position: sticky;
+				top: 0;
+			}
+
+			ul {
+				list-style: none;
+				display: flex;
+			}
+
+			li {
+				margin: 5px 20px;
+				padding: 2px;
+			}
+
+			li:hover {
+				color: white;
+				cursor: pointer;
+			}
+
+			main {
+				padding: 100px;
+				height: 86vh;
+				background-color: rgb(231, 161, 231);
+			}
+
+			.boxes {
+				display: flex;
+			}
+
+			@media only screen and (max-width:900px)
+			{
+				.boxes{
+					flex-direction:column;
+				}
+			}
+
+			.box {
+				width: 40vmin;
+				height: 40vmin;
+				background-color: red;
+				margin: 0 30px;
+				display: inline-block;
+				margin: 40px auto;
+			}
+
+			.greeting {
+				color: blue;
+				text-align: center;
+				background-color: lightblue;
+				border-radius: 20px;
+				padding:20px;
+				margin:100px 80px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="logo">
+			<img
+				image="logo"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWK7iANO5hX49JDfRroGHElwt2yW3m6LvnFg&usqp=CAU"
+				alt="logo"
+				width="60px"
+			/>
+		</div>
+		<header class="upper">
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="boxes">
+				<div class="box box1"></div>
+				<div class="box box2"></div>
+			</div>
+
+			<div class="greeting">
+				Welcome to our Website
+			</div>
+		</main>
+
+		<footer>
+			<div>
+				<ul>
+					<li>Instagram</li>
+					<li>Facebook</li>
+					<li>Linkdin</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+
+    <style>
+
+        *{
+            padding:0px;
+            margin:0px;
+        }
+
+        .boxes{
+            background-color:aliceblue;
+            padding:20px;
+            border:2px solid blue;
+            display:flow-root;
+        }
+
+        .box{
+            background-color:blue;
+            padding:20px;
+            border:2px solid black;                  
+        }
+
+        .boxes img{
+            float:right;
+        }
+
+        .box:nth-child(3){
+            /* clear:right; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrFDD73kU-4G3Qw55fsYLAzIvc0Z84ww3crQ&usqp=CAU" alt="Men on Boat" width="200px">
+        <div class="box box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta laudantium eum voluptatum cumque!</div>
+        <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque voluptas autem rem? Perferendis quis aliquam accusantium laboriosam in. Dicta accusantium soluta adipisci iure magnam.</div>
+        <div class="box box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem velit, commodi a ipsam tenetur, modi consequatur sapiente, veniam fuga doloribus ullam deleniti. Nam tempora vitae dolores velit saepe quae culpa!</div>
+    </div>
+</body>
+</html>
